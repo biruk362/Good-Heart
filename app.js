@@ -96,7 +96,11 @@ app.post('/buy-now', async function (req, res) {
 
     request.end()
 });
-let server = app.listen(8081, function(){
-    let port = server.address().port;
-    console.log("Server started at http://localhost:%s", port);
+let port = process.env.PORT || 8081
+//let server = app.listen(8081, function(){
+    //let port = server.address().port;
+   // console.log("Server started at http://localhost:%s", port);
+//});
+app.listen(port,()=>{
+    console.log("Server started at http://localhost:%s", port)
 });
