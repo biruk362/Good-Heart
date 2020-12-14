@@ -51,7 +51,7 @@ $(document).on('click', '.BuyNow', function(){
                     $('.MSG.alert-success').html(`ID/Invoice Code: <strong>`+response.code+`</strong><br>
                     Please pay us using your HelloCash account or go to any HelloCash agent to pay
                     እባክዎን የሄሎካሽ አካውንትዎን በመጠቀም ይክፈሉን ወይም ለመክፈል ወደ ማንኛውም ሄሎካሽ ወኪል ይሂዱ
-                    `+response.code+``).show();
+                    <br>የመታወቂያ / የክፍያ መጠየቂያ ኮድ`+response.code+``).show();
                 }
             },
             error: function(error){

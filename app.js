@@ -83,7 +83,7 @@ app.post('/buy-now', async function (req, res) {
     
     let data = JSON.stringify({    
         "amount": parseInt(req.body.Price),
-        "description": `Hi ${req.body.BuyerName} | You have ${req.body.Price}Birr Payment for ${req.body.Name}(${req.body.Description}) item.`,
+        "description": `Dear ${req.body.BuyerName} | You have ${req.body.Price}Birr Donation for ${req.body.Name}(${req.body.Description}) item.`,
         "from": `+251${req.body.PhoneNumber}`,
         "currency": "ETB",
         "tracenumber": `Biruk_invoice-${""+Now.getHours()+""+Now.getMinutes()+""+Now.getSeconds()+""}`,
