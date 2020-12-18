@@ -30,7 +30,7 @@ app.get('/invoices-list', function(req, res){
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE',
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcmluY2lwYWwiOiIxMjQ4MzQwIiwic3lzdGVtIjoibHVjeSIsImdyb3VwIjoiYnVzaW5lc3MiLCJ1c2VybmFtZSI6IjEyNDgzNDAiLCJjaGFpbiI6WyJwYXNzd29yZCJdLCJpYXQiOjE2MDc2NzE2MzMsImV4cCI6MTYwNzc1ODAzM30.UCE39fjxInuxgs41AoajVoYYlf341xlknNIFwfvPX3U'
+            'Authorization': 'Bearer '
         }
     }, response => {
         let requestBody = [];
@@ -64,7 +64,7 @@ app.post('/donate-now', async function (req, res) {
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE',
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcmluY2lwYWwiOiIxMjQ4MzQwIiwic3lzdGVtIjoibHVjeSIsImdyb3VwIjoiYnVzaW5lc3MiLCJ1c2VybmFtZSI6IjEyNDgzNDAiLCJjaGFpbiI6WyJwYXNzd29yZCJdLCJpYXQiOjE2MDc2NzE2MzMsImV4cCI6MTYwNzc1ODAzM30.UCE39fjxInuxgs41AoajVoYYlf341xlknNIFwfvPX3U'
+            'Authorization': 'Bearer '
         }
     }, response => {
         let requestBody = [];
